@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>Verify Email Marketing MPSO page elements</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Verify Email Marketing MPSO page elements</td></tr>
+</thead><tbody>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['BillingFrequency']=='annual'</td>
+	<td>annualEmailMarketing</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=_ct10_o1794_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=_ct10_o1794_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='divTabPane']/div/div[2]/div</td>
+	<td>${TV_EmailMarketingMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${EmailMarketingMPSO}==0</td>
+	<td>dontCheckMonthlyEmailMarketingMPSO</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=cboxSelect_ct1_o1794_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>dontCheckMonthlyEmailMarketingMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>doneWithEmailMarketing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>annualEmailMarketing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=_ct10_o3335_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>id=_ct10_o3335_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='divTabPane']/div/div[2]/div</td>
+	<td>${TV_Annual_EmailMarketingMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${EmailMarketingMPSO}==0</td>
+	<td>dontCheckAnnualEmailMarketingMPSO</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=cboxSelect_ct1_o3335_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>dontCheckAnnualEmailMarketingMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doneWithEmailMarketing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=MpsoNextButton_enabled</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipEmailMarketingMPSO</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

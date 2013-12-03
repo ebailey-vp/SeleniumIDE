@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>Verify All Dashboard elements are present.</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Verify All Dashboard elements are present.</td></tr>
+</thead><tbody>
+<tr>
+	<td>waitForTextNotPresent</td>
+	<td>Welcome to your services home page!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>${uniqueName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.function-button.monitor&nbsp;&nbsp;&gt; span.icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.function-button.envelope&nbsp;&nbsp;&gt; span.icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.function-button.graph&nbsp;&nbsp;&gt; span.icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>link=Control Panel@href</td>
+	<td>/my-services/website-builder/dashboard.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>link=Mobile Website@href</td>
+	<td>/my-services/website-builder/mobile.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>link=Search Engine Optimizer@href</td>
+	<td>/my-services/website-builder/search-engine-optimizer.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>link=Domain Name@href</td>
+	<td>/my-services/website-builder/domain-name-options.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>link=Site Settings@href</td>
+	<td>/my-services/website-builder/site-settings.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>link=Manage Forms@href</td>
+	<td>/my-services/website-builder/manage-forms.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=a.function-button.envelope@href</td>
+	<td>/my-services/website-builder/manage-email.aspx?alt_id=${d}&amp;st=12&amp;nd=1&amp;reqView=4</td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=a.function-button.graph@href</td>
+	<td>/my-services/website-builder/site-activity.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='premium'</td>
+	<td>noUpgrade</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>css=a.function-button.upgrade&nbsp;&nbsp;&gt; span.icon</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertAttribute</td>
+	<td>css=a.function-button.upgrade@href</td>
+	<td>/my-services/upgrade.aspx?alt_id=${d}&amp;st=12&amp;nd=1&amp;ut=5</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noUpgrade</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

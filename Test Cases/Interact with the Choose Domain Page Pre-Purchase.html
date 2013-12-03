@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>Enter unique top-leveldomain</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Enter unique top-leveldomain</td></tr>
+</thead><tbody>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=type_skip</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['skipDomain']==0</td>
+	<td>selectDomain</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=type_skip</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=navigationnext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedWithDomain</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>selectDomain</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='basic'</td>
+	<td>selectSubDomain</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.au' || storedVars['domainSuffix']=='.dk' || storedVars['domainSuffix']=='.es' || storedVars['domainSuffix']=='.fr'</td>
+	<td>ExtraCostDomain</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=normal_price_sld</td>
+	<td>${uniqueName}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=normal_price_tld</td>
+	<td>value=${domainOptionValue}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=navigationnext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>skipExtraCostDomain</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>ExtraCostDomain</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=extra_sld</td>
+	<td>${uniqueName}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=navigationnext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipExtraCostDomain</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['requiresExtraForm']=='1'</td>
+	<td>ExtraForm</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=navigationnext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedWithDomain</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>ExtraForm</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=legal_type</td>
+	<td>isLegalEntity</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=state</td>
+	<td>isRegion</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=agree_tos</td>
+	<td>isTermsOfService</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=eligibility_type</td>
+	<td>isEligibilityType</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=registrant_id_type</td>
+	<td>isRegistrantType</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=registrant_id</td>
+	<td>isRegistrantId</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=dob</td>
+	<td>isDateOfBirth</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=pob</td>
+	<td>isPlaceOfBirth</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=zob</td>
+	<td>isZipOfBirth</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>name=fax</td>
+	<td>isFax</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=_firstname</td>
+	<td>${QA_firstname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=_lastname</td>
+	<td>${QA_lastname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=_company</td>
+	<td>${uniqueName}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=_address1</td>
+	<td>${currentStreet}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=_city</td>
+	<td>${currentCity}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=_zip</td>
+	<td>${currentPostalCode}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=_phone</td>
+	<td>+${currentPhone}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>${uniqueEmail}</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isLegalEntity']==false</td>
+	<td>noLegalEntity</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=legal_type</td>
+	<td>${currentEntityType}</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noLegalEntity</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isRegion']==false</td>
+	<td>noRegion</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['regionSelect']==0</td>
+	<td>regionTextField</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=state</td>
+	<td>${currentRegion}</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>doneWithRegion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>regionTextField</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=state</td>
+	<td>${currentRegion}</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doneWithRegion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noRegion</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isEligibilityType']==false</td>
+	<td>noEligibilityType</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=eligibility_type</td>
+	<td>${currentEligibilityType}</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noEligibilityType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isRegistrantType']==false</td>
+	<td>noRegistrantType</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=registrant_id_type</td>
+	<td>${currentRegistrantType}</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noRegistrantType</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isRegistrantId']==false</td>
+	<td>noRegistrantId</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=registrant_id</td>
+	<td>${currentRegistrantId}</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noRegistrantId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isTermsOfService']==false</td>
+	<td>noTerms</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=agree_tos</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noTerms</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isDateOfBirth']==false</td>
+	<td>noDob</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=dob</td>
+	<td>01/05/1975</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noDob</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isPlaceOfBirth']==false</td>
+	<td>noPob</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=pob</td>
+	<td>${currentCity}</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noPob</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isZipOfBirth']==false</td>
+	<td>noZob</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=zob</td>
+	<td>${currentPostalCode}</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noZob</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isFax']==false</td>
+	<td>noFax</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=fax</td>
+	<td>+${currentPhone}</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noFax</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=navigationnext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedWithDomain</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>selectSubDomain</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=dropdown_subdomain</td>
+	<td>${uniqueName}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=navigationnext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>finishedWithDomain</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>Verify Terms and Conditions</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Verify Terms and Conditions</td></tr>
+</thead><tbody>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='premium' &amp;&amp; storedVars['EmailMarketingMPSO']==0 &amp;&amp; storedVars['LocalSearchMPSO']==0</td>
+	<td>WNN</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='premium' &amp;&amp; storedVars['EmailMarketingMPSO']==1 &amp;&amp; storedVars['LocalSearchMPSO']==0</td>
+	<td>WYN</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='premium' &amp;&amp; storedVars['EmailMarketingMPSO']==0 &amp;&amp; storedVars['LocalSearchMPSO']==1</td>
+	<td>WNY</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='premium' &amp;&amp; storedVars['EmailMarketingMPSO']==1 &amp;&amp; storedVars['LocalSearchMPSO']==1</td>
+	<td>WYY</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==0 &amp;&amp; storedVars['EmailMarketingMPSO']==0 &amp;&amp; storedVars['LocalSearchMPSO']==0</td>
+	<td>WNN</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==0 &amp;&amp; storedVars['EmailMarketingMPSO']==1 &amp;&amp; storedVars['LocalSearchMPSO']==0</td>
+	<td>WYN</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==0 &amp;&amp; storedVars['EmailMarketingMPSO']==0 &amp;&amp; storedVars['LocalSearchMPSO']==1</td>
+	<td>WNY</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==0 &amp;&amp; storedVars['EmailMarketingMPSO']==1 &amp;&amp; storedVars['LocalSearchMPSO']==1</td>
+	<td>WYY</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==1 &amp;&amp; storedVars['EmailMarketingMPSO']==0 &amp;&amp; storedVars['LocalSearchMPSO']==0</td>
+	<td>HNN</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==1 &amp;&amp; storedVars['EmailMarketingMPSO']==1 &amp;&amp; storedVars['LocalSearchMPSO']==0</td>
+	<td>HYN</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==1 &amp;&amp; storedVars['EmailMarketingMPSO']==0 &amp;&amp; storedVars['LocalSearchMPSO']==1</td>
+	<td>HNY</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==1 &amp;&amp; storedVars['EmailMarketingMPSO']==0 &amp;&amp; storedVars['LocalSearchMPSO']==0</td>
+	<td>HYY</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>WNN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>By clicking the &quot;Place Order&quot; button you are agreeing to the pricing above and to our Terms of Use, including our&nbsp;&nbsp;Websites Terms and Conditions.Orders cannot be changed or canceled once submitted.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>WYN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>By clicking the &quot;Place Order&quot; button you are agreeing to the pricing above and to our Terms of Use, including our&nbsp;&nbsp;Websites Terms and Conditions.Orders cannot be changed or canceled once submitted.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>WNY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>By clicking the &quot;Place Order&quot; button you are agreeing to the pricing above and to our Terms of Use, including our&nbsp;&nbsp;Websites Terms and Conditions.Orders cannot be changed or canceled once submitted.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>WYY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>By clicking the &quot;Place Order&quot; button you are agreeing to the pricing above and to our Terms of Use, including our&nbsp;&nbsp;Websites Terms and Conditions.Orders cannot be changed or canceled once submitted.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>HNN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>By clicking the &quot;Place Order&quot; button you are agreeing to the pricing above and to our Terms of Use, including our&nbsp;&nbsp;Websites Terms and Conditions.Orders cannot be changed or canceled once submitted.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>HYN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>By clicking the &quot;Place Order&quot; button you are agreeing to the pricing above and to our Terms of Use, including our&nbsp;&nbsp;Websites Terms and Conditions.Orders cannot be changed or canceled once submitted.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>HNY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>By clicking the &quot;Place Order&quot; button you are agreeing to the pricing above and to our Terms of Use, including our&nbsp;&nbsp;Websites Terms and Conditions.Orders cannot be changed or canceled once submitted.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>HYY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>By clicking the &quot;Place Order&quot; button you are agreeing to the pricing above and to our Terms of Use, including our&nbsp;&nbsp;Websites Terms and Conditions.Orders cannot be changed or canceled once submitted.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>finishedVerifyTOC</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

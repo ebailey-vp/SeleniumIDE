@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>QA_config</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">QA_config</td></tr>
+</thead><tbody>
+
+<!-- ** Enter your first and last name. A -->
+<!-- ** username will automatically be generated. -->
+<tr>
+	<td>store</td>
+	<td>Eric</td>
+	<td>QA_firstname</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Bailey</td>
+	<td>QA_lastname</td>
+</tr>
+<!-- ** Enter the package type you want -->
+<!-- ** to buy. This can be basic, standard, -->
+<!-- ** or premium. Use lower-case. -->
+<tr>
+	<td>store</td>
+	<td>standard</td>
+	<td>WebsitePackage</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>monthly</td>
+	<td>BillingFrequency</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>23464</td>
+	<td>featureValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>later</td>
+	<td>whenToLogIn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>performTextValidation</td>
+</tr>
+<!-- ** Enter a 1 if you do NOT want -->
+<!-- ** to select a domain, and leave -->
+<!-- ** a 0 if you DO want a domain. -->
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>skipDomain</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>.au</td>
+	<td>domainSuffix</td>
+</tr>
+<!-- ** Enter a 1 for any add-on product -->
+<!-- ** you want to buy. Leave as 0 if -->
+<!-- ** you don't want this item -->
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>EmailMarketingMPSO</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>LocalSearchMPSO</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>FaceBookMPSO</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>SearchEngineMPSO</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>webStoreMPSO</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>siteActivityMPSO</td>
+</tr>
+<!-- ** don't change anything below this line. -->
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['QA_firstname'].charAt(0).toLowerCase()</td>
+	<td>firstletter</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['QA_lastname'].toLowerCase()</td>
+	<td>lastlower</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['firstletter']+storedVars['lastlower']</td>
+	<td>QA_username</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${QA_username}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${PackageToSelect}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dates = new Date();var day = dates.getDate();var month = dates.getMonth() + 1;var year = dates.getFullYear();var hour = dates.getHours();if (hour &lt; 10){hour = '0' + hour;}var minute = dates.getMinutes();if (minute &lt; 10){minute = '0' + minute;}var second= dates.getSeconds();if (second &lt; 10){second = '0' + second;} storedVars['QA_username'] + '-' + month + '-' + day + '-' + year + '-' + hour + minute + second}</td>
+	<td>uniqueName</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['uniqueName']+ &quot;@vptest.com&quot;</td>
+	<td>uniqueEmail</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.com'</td>
+	<td>domainCOM</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.co'</td>
+	<td>domainCO</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.net'</td>
+	<td>domainNET</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.org'</td>
+	<td>domainORG</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.info'</td>
+	<td>domainINFO</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.biz'</td>
+	<td>domainBIZ</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.name'</td>
+	<td>domainNAME</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.us'</td>
+	<td>domainUS</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.co.uk'</td>
+	<td>domainCOUK</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.eu'</td>
+	<td>domainEU</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.be'</td>
+	<td>domainBE</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.ca'</td>
+	<td>domainCA</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.au'</td>
+	<td>domainAU</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.co.nz'</td>
+	<td>domainCONZ</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.es'</td>
+	<td>domainES</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.fr'</td>
+	<td>domainFR</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.de'</td>
+	<td>domainDE</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['domainSuffix']=='.nl'</td>
+	<td>domainNL</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainCOM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>6</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainCO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>86</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainNET</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainORG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>8</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainINFO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>9</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainBIZ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>10</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainNAME</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>11</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainUS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>12</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainCOUK</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>295</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainEU</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>33</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainBE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>58</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainCA</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>74</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainAU</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainCONZ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>308</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainES</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainFR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainDE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>94</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>domainNL</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>206</td>
+	<td>domainOptionValue</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>requiresExtraForm</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>finishedDomainConfig</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

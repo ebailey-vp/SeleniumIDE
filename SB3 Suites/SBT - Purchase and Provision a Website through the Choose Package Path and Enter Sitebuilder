@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="../Setup and Configuration/Environment and Locale Configuration.html">Environment and Locale Configuration</a></td></tr>
+<tr><td><a href="../Setup and Configuration/SB3 QA Configuration.html">SB3 QA Configuration</a></td></tr>
+<tr><td><a href="../Test Cases/Delete All Visible Cookies.html">Delete All Visible Cookies</a></td></tr>
+<tr><td><a href="../Test Cases/Log In specifically using the Login Link.html">Log In specifically using the Login Link</a></td></tr>
+<tr><td><a href="../Test Cases/Navigate to Website Product Page.html">Navigate to Website Product Page</a></td></tr>
+<tr><td><a href="../Test Cases/Take the Choose Package Website Path.html">Take the Choose Package Website Path</a></td></tr>
+<tr><td><a href="../Test Cases/Select a Website Package from the Package Grid.html">Select a Website Package from the Package Grid</a></td></tr>
+<tr><td><a href="../Test Cases/Perform Text Verification on the Package Grid Page.html">Perform Text Verification on the Package Grid Page</a></td></tr>
+<tr><td><a href="../Test Cases/Interact with the Choose Domain Page Pre-Purchase.html">Interact with the Choose Domain Page Pre-Purchase</a></td></tr>
+<tr><td><a href="../Test Cases/Log In when prompted prior to MPSO.html">Log In when prompted prior to MPSO</a></td></tr>
+<tr><td><a href="../Test Cases/Interact with the Website Add-Ons MPSO tab.html">Interact with the Website Add-Ons MPSO tab</a></td></tr>
+<tr><td><a href="../Test Cases/Interact with the Email Marketing MPSO tab.html">Interact with the Email Marketing MPSO tab</a></td></tr>
+<tr><td><a href="../Test Cases/Interact with the Local Search Profile MPSO tab.html">Interact with the Local Search Profile MPSO tab</a></td></tr>
+<tr><td><a href="../Test Cases/Click Checkout Button.html">Click Checkout Button</a></td></tr>
+<tr><td><a href="../Test Cases/Interact with the Billing Information Page.html">Interact with the Billing Information Page</a></td></tr>
+<tr><td><a href="../Test Cases/Interact with the Credit Card Page.html">Interact with the Credit Card Page</a></td></tr>
+<tr><td><a href="../Test Cases/Verify Terms and Conditions.html">Verify Terms and Conditions</a></td></tr>
+<tr><td><a href="../Test Cases/Click Checkout Confirmation Button.html">Click Checkout Confirmation Button</a></td></tr>
+<tr><td><a href="../Test Cases/Click through Confirmation Tile.html">Click through Confirmation Tile</a></td></tr>
+<tr><td><a href="../Test Cases/Extract ALT-ID from URL.html">Extract ALT-ID from URL</a></td></tr>
+<tr><td><a href="../Test Cases/Perform Verification of Dashboard Elements.html">Perform Verification of Dashboard Elements</a></td></tr>
+</tbody></table>
+</body>
+</html>

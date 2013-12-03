@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='premium'</td>
+	<td>alreadyHasAllAddOns</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['BillingFrequency']=='annual'</td>
+	<td>startAnnualVersions</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='layout_pElectronicServicesProductConfigurationTab_lacst_o0']/div[2]</td>
+	<td>${TV_FacebookMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=_ct10_o3136_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==0</td>
+	<td>skipMonthlyFaceBookMPSO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cboxSelect_ct1_o3136_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipMonthlyFaceBookMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='layout_pElectronicServicesProductConfigurationTab_lacst_o1']/div[2]</td>
+	<td>${TV_SEOMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=_ct10_o3631_i1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['SearchEngineMPSO']==0</td>
+	<td>skipMonthlySearchEngineMPSO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cboxSelect_ct1_o3631_i1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipMonthlySearchEngineMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='layout_pElectronicServicesProductConfigurationTab_lacst_o2']/div[2]</td>
+	<td>${TV_OnlineStoreMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=_ct10_o3563_i2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['webStoreMPSO']==0</td>
+	<td>skipMonthlyWebStoreMPSO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cboxSelect_ct1_o3563_i2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipMonthlyWebStoreMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='standard'</td>
+	<td>doneVerifyingAddOns</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='layout_pElectronicServicesProductConfigurationTab_lacst_o3']/div[2]</td>
+	<td>${TV_SiteActivityMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=_ct10_o3624_i3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['siteActivityMPSO']==0</td>
+	<td>skipMonthlySiteActivityMPSO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cboxSelect_ct1_o3624_i3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipMonthlySiteActivityMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>doneVerifyingAddOns</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>startAnnualVersions</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='layout_pElectronicServicesProductConfigurationTab_lacst_o0']/div[2]</td>
+	<td>${TV_Annual_FacebookMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=_ct10_o3333_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['FaceBookMPSO']==0</td>
+	<td>skipAnnualFaceBookMPSO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cboxSelect_ct1_o3333_i0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipAnnualFaceBookMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='layout_pElectronicServicesProductConfigurationTab_lacst_o1']/div[2]</td>
+	<td>${TV_Annual_SEOMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=_ct10_o3635_i1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['SearchEngineMPSO']==0</td>
+	<td>skipAnnualSearchEngineMPSO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cboxSelect_ct1_o3635_i1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipAnnualSearchEngineMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='layout_pElectronicServicesProductConfigurationTab_lacst_o2']/div[2]</td>
+	<td>${TV_Annual_OnlineStoreMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=_ct10_o3564_i2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['webStoreMPSO']==0</td>
+	<td>skipAnnualWebStoreMPSO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cboxSelect_ct1_o3564_i2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipAnnualWebStoreMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='standard'</td>
+	<td>doneVerifyingAddOns</td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//*[@id='layout_pElectronicServicesProductConfigurationTab_lacst_o3']/div[2]</td>
+	<td>${TV_Annual_SiteActivityMPSOAddOn}</td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=_ct10_o3625_i3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['siteActivityMPSO']==0</td>
+	<td>skipAnnualSiteActivityMPSO</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=cboxSelect_ct1_o3625_i3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipAnnualSiteActivityMPSO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>doneVerifyingAddOns</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=MpsoNextButton_enabled</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>alreadyHasAllAddOns</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

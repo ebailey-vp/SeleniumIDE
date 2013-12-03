@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>Log in as a new user (ebailey)</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['whenToLogIn']=='now'</td>
+	<td>alreadyLoggedIn</td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=rblPasswordQuestion_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=rblPasswordQuestion_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var randomnumber=Math.floor(Math.random()*21);var previewNum = randomnumber * 10;previewNum}</td>
+	<td>previewNum</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>&quot;imgPreview&quot; + storedVars['previewNum']</td>
+	<td>previewImage</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtEmail</td>
+	<td>${uniqueEmail}</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=txtEmailAgain</td>
+	<td>retypeEmail</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['retypeEmail']!=true</td>
+	<td>oneEmailField</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtEmailAgain</td>
+	<td>${uniqueEmail}</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>oneEmailField</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtFirstName</td>
+	<td>${QA_firstname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtLastName</td>
+	<td>${QA_lastname}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtPassword</td>
+	<td>qatest1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtPasswordAgain</td>
+	<td>qatest1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=txtPasswordHint</td>
+	<td>Standard QA</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=btnSignUp</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>alreadyLoggedIn</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

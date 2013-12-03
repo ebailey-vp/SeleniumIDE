@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>Enter Credit Card Information</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Enter Credit Card Information</td></tr>
+</thead><tbody>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>id=Ecom_Payment_Card_Type</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Ecom_Payment_Card_Number</td>
+	<td>4111111111111111</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Ecom_Payment_Card_ExpDate_Month</td>
+	<td>label=03</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=Ecom_Payment_Card_ExpDate_Year</td>
+	<td>label=2016</td>
+</tr>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=Ecom_Payment_Card_Verification</td>
+	<td>isThereAVerificationCode</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['isThereAVerificationCode']==false</td>
+	<td>skipCCVerificationCode</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=Ecom_Payment_Card_Verification</td>
+	<td>411</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipCCVerificationCode</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=imgEnabledButton1022044</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
