@@ -9,6 +9,7 @@
 <table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
 <tr><td><b>Test Suite</b></td></tr>
 <tr><td><a href="../Setup and Configuration/Environment and Locale Configuration.html">Environment and Locale Configuration</a></td></tr>
+<tr><td><a href="../Setup and Configuration/SB3 Text Validation Configuration By Locale.html">SB3 Text Validation Configuration By Locale</a></td></tr>
 <tr><td><a href="../Setup and Configuration/SB3 QA Configuration.html">SB3 QA Configuration</a></td></tr>
 <tr><td><a href="../Test Cases/Delete All Visible Cookies.html">Delete All Visible Cookies</a></td></tr>
 <tr><td><a href="../Test Cases/Log In specifically using the Login Link.html">Log In specifically using the Login Link</a></td></tr>

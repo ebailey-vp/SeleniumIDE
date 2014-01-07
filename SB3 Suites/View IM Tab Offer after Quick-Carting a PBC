@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>Test Suite</title>
+</head>
+<body>
+<table id="suiteTable" cellpadding="1" cellspacing="1" border="1" class="selenium"><tbody>
+<tr><td><b>Test Suite</b></td></tr>
+<tr><td><a href="../Setup and Configuration/Environment and Locale Configuration.html">Environment and Locale Configuration</a></td></tr>
+<tr><td><a href="../Setup and Configuration/SB3 QA Configuration.html">SB3 QA Configuration</a></td></tr>
+<tr><td><a href="../Test Cases/Delete All Visible Cookies.html">Delete All Visible Cookies</a></td></tr>
+<tr><td><a href="../Test Cases/Log In specifically using the Login Link.html">Log In specifically using the Login Link</a></td></tr>
+<tr><td><a href="../Test Cases/Quick-Cart a Product.html">Quick-Cart a Product</a></td></tr>
+<tr><td><a href="../Test Cases/Click Edit Options Link in cart.html">Click Edit Options Link in cart</a></td></tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,5837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>SB2 Text Validation By Locale</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SB2 Text Validation By Locale</td></tr>
+</thead><tbody>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='US'</td>
+	<td>unitedStatesLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='AU'</td>
+	<td>australiaLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='BE'</td>
+	<td>belgiumLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='CA'</td>
+	<td>canadaLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='DK'</td>
+	<td>denmarkLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='DE'</td>
+	<td>germanyLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='ES'</td>
+	<td>spainLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='EU'</td>
+	<td>europeLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='FR'</td>
+	<td>franceLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='IE'</td>
+	<td>irelandLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='IT'</td>
+	<td>italyLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='NL'</td>
+	<td>netherlandsLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='NZ'</td>
+	<td>newZealandLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='NO'</td>
+	<td>norwayLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='AT'</td>
+	<td>austriaLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='CH'</td>
+	<td>switzerlandLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='SG'</td>
+	<td>singaporeLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='SE'</td>
+	<td>swedenLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='JP'</td>
+	<td>japanLocale</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale']=='UK'</td>
+	<td>unitedKingdomLocale</td>
+</tr>
+<!-- start the locale configurations -->
+<!-- -->
+<!-- USA! -->
+<tr>
+	<td>label</td>
+	<td>unitedStatesLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>com</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>95 Hayden Ave</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Lexington</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>United States of America</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Massachusetts</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>02421</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Custom Page Builder*Customize a Facebook business page with professional templates, photo galleries, powerful social media features, and much more.*Try 1 month*FREE*!*Then, only*$9.99*per month.*Add to my Order</td>
+	<td>TV_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer*These tools will help you get more exposure in search results to attract more visitors.*Try 1 month*FREE*!*Then, only*$9.99*per month.*Add to my Order</td>
+	<td>TV_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Receive Credit Card Payments*If you want to sell your products and services or collect donations and contributions, add PayPal to your website package.*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order</td>
+	<td>TV_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Advanced Site Activity Reports*Get an in-depth look at your website’s performance by tracking visit duration, features used and more.*Try 1 month*FREE*!*Then, only*$2.99*per month.*Add to my Order</td>
+	<td>TV_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Website*Get more traffic to your website by optimizing it for cell phone users. There's no set-up necessary; we handle everything.*Try 1 month*FREE*!*Then, only*$2.99*per month.*Add to my Order</td>
+	<td>TV_MobileMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your email marketing in minutes*Reach out to customers with targeted emails*Launch professional-looking email campaigns that generate customer response.*Email newsletters, offers, and announcements*Track campaigns and measure their success*Auto-populate emails with recipients' names*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order*After accepting the FREE Trial Offer, you'll receive a link to take advantage of your new subscription. The FREE Trial Offer lasts for 1-month. If you cancel before the trial ends, you will have paid nothing and will owe nothing. To cancel, simply call (toll-free) 1-800-961-2077 or visit your dashboard for a self cancellation option. The fee will only be charged when the FREE Trial Offer period ends, and will be charged to the credit card used for your Vistaprint order today.</td>
+	<td>TV_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Drive Traffic with a Local Search Profile*Get Listed in Google®*FREE*for 1 month*Drive more traffic to your website and attract more customers*Create a profile with your business information, photos and videos in minutes*Vistaprint will submit your information to 100+ search engines including Google®, Yahoo!®, and YellowPages.com™*Get a better search ranking with automatic website enhancements*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order</td>
+	<td>TV_LocalSearchMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Custom Page Builder*Customize a Facebook business page with professional templates, photo galleries, powerful social media features, and much more.*Try 1 month*FREE*!*Then, only*$9.99*per month.*Add to my Order</td>
+	<td>TV_Annual_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer*These tools will help you get more exposure in search results to attract more visitors.*Try 1 month*FREE*!*Then, only*$9.99*per month.*Add to my Order</td>
+	<td>TV_Annual_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Receive Credit Card Payments*If you want to sell your products and services or collect donations and contributions, add PayPal to your website package.*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order</td>
+	<td>TV_Annual_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Advanced Site Activity Reports*Get an in-depth look at your website's performance with traffic data, referral sources, and more.*Try 1 month*FREE*!*Then, only*$2.99*per month.*Add to my Order</td>
+	<td>TV_Annual_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>test</td>
+	<td>TV_Annual_MobileMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your email marketing in minutes*Reach out to customers with targeted emails*Launch professional-looking email campaigns that generate customer response.*Email newsletters, offers, and announcements*Track campaigns and measure their success*Auto-populate emails with recipients' names*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order*After accepting the FREE Trial Offer, you'll receive a link to take advantage of your new subscription. The FREE Trial Offer lasts for 1-month. If you cancel before the trial ends, you will have paid nothing and will owe nothing. To cancel, simply call (toll-free) 1-800-961-2077 or visit your dashboard for a self cancellation option. The fee will only be charged when the FREE Trial Offer period ends, and will be charged to the credit card used for your Vistaprint order today.</td>
+	<td>TV_Annual_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Drive Traffic with a Local Search Profile*Get Listed in Google® FREE for 1 month*Drive more traffic to your website and attract more customers*Create a profile with your business information, photos and videos in minutes*Vistaprint will submit your information to 100+ search engines including Google®, Yahoo!®, and YellowPages.com™*Get a better search ranking with automatic website enhancements*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order </td>
+	<td>TV_Annual_LocalSearchMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=4121823693</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- AUSTRALIA! -->
+<tr>
+	<td>label</td>
+	<td>australiaLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>com.au</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>500 George St</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sydney</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Australia</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>New South Wales</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2000</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Company</td>
+	<td>currentEligibilityType</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ABN</td>
+	<td>currentRegistrantType</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>12345</td>
+	<td>currentRegistrantId</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses: Give your business a professional look with an email address at your domain.*Email Alias: A valid email address that you can create to match your website URL. All of the messages that you receive through the alias are forwarded to an email address of your choice.*Mailboxes: The standard and professional packages allow you to create mailboxes which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customise your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your business, favourite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Online Store</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimiser</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Business Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your own great-looking Facebook Page using our fully customisable professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$9.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Business Page Builder*Create your own professional Facebook Page with great-looking designs, photo galleries, social media features and more.*Try 1 month*FREE*!*Then, only*$5.99*per month.*Add to my Order</td>
+	<td>TV_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimiser*These tools will help you get more exposure in search results to attract more visitors.*Try 1 month*FREE*!*Then, only*$7.49*per month.*Add to my Order</td>
+	<td>TV_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Receive Credit Card Payments*If you want to sell your products and services, add our Online Store to your website package.*Try 1 month*FREE*!*Then, only*$6.49*per month.*Add to my Order</td>
+	<td>TV_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Advanced Site Activity Reports*Get an in-depth look at your website's performance with traffic data, referral sources, and more.*Try 1 month*FREE*!*Then, only*$3.23*per month.*Add to my Order</td>
+	<td>TV_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your email marketing in minutes* We make it easy to increase your online presence*Grow your business with professional-looking emails.*Easily create pro email campaigns*Send your news, offers and event info*Attractive emails that match your marketing products*Try 1 month*FREE*!*Then, only*$7.99*per month.*Add to my Order*After accepting the FREE Trial Offer, you'll receive a link to take advantage of your new subscription. The FREE Trial Offer lasts for 1-month. If you cancel before the trial ends, you will have paid nothing and will owe nothing. To cancel, simply call (toll-free) 1800 021 631 or visit your dashboard for a self cancellation option. The fee will only be charged when the FREE Trial Offer period ends, and will be charged to the credit card used for your Vistaprint order today.</td>
+	<td>TV_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Drive Traffic with a Local Search Profile*Get Listed in Google®*FREE*for 1 month*Drive more traffic to your website and attract more customers*Create a profile with your business information, photos and videos in minutes*Vistaprint will submit your information to 100+ search engines including Google®, Yahoo!®, and YellowPages.com™*Get a better search ranking with automatic website enhancements*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order</td>
+	<td>TV_LocalSearchMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Business Page Builder*Create your own professional Facebook Page with great-looking designs, photo galleries, social media features and more.*Try 1 month*FREE*!*Then, only*$4.00*per month.*Add to my Order</td>
+	<td>TV_Annual_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimiser*These tools will help you get more exposure in search results to attract more visitors.*Try 1 month*FREE*!*Then, only*$6.49*per month.*Add to my Order</td>
+	<td>TV_Annual_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Receive Credit Card Payments*If you want to sell your products and services, add our Online Store to your website package.*Try 1 month*FREE*!*Then, only*$5.49*per month.*Add to my Order</td>
+	<td>TV_Annual_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Advanced Site Activity Reports*Get an in-depth look at your website's performance with traffic data, referral sources, and more.*Try 1 month*FREE*!*Then, only*$2.49*per month.*Add to my Order</td>
+	<td>TV_Annual_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your email marketing in minutes* Email Marketing*FREE*for 1 month*We make it easy to increase your online presence*Select from hundreds of design templates for each campaign*Powerful tracking and reporting tools*No technical skills required*Try 1 month*FREE*!*Then, only*$5.33*per month.*Add to my Order*After accepting the FREE Trial Offer, you'll receive a link to take advantage of your new subscription. The FREE Trial Offer lasts for 1-month. If you cancel before the trial ends, you will have paid nothing and will owe nothing. To cancel, simply call (toll-free) 1800 021 631 or visit your dashboard for a self cancellation option. The fee will only be charged when the FREE Trial Offer period ends, and will be charged to the credit card used for your Vistaprint order today.</td>
+	<td>TV_Annual_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Drive Traffic with a Local Search Profile*Get Listed in Google® FREE for 1 month*Drive more traffic to your website and attract more customers*Create a profile with your business information, photos and videos in minutes*Vistaprint will submit your information to 100+ search engines including Google®, Yahoo!®, and YellowPages.com™*Get a better search ranking with automatic website enhancements*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order </td>
+	<td>TV_Annual_LocalSearchMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Subscription Plan</td>
+	<td>TV_DualPlanFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Annual*$6.66*/Month*You Save 33%*Monthly*$9.99*/Month</td>
+	<td>TV_DualPlanBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Annual*$9.98*/Month*You Save 33%*Monthly*$14.99*/Month</td>
+	<td>TV_DualPlanStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Annual*$16.67*/Month*You Save 33%*Monthly*$24.99*/Month</td>
+	<td>TV_DualPlanPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083080</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- BELGIUM! -->
+<tr>
+	<td>label</td>
+	<td>belgiumLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>be</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Avenue Culliganlaan 1a</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Diegem</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>België</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>N/A</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1831</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>32027043000</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- CANADA! -->
+<tr>
+	<td>label</td>
+	<td>canadaLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ca</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1950 Meadowvale Blvd</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mississauga</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Canada</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Ontario</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>L5N 8L9</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Canadian Citizen</td>
+	<td>currentEntityType</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083081</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- DENMARK! -->
+<tr>
+	<td>label</td>
+	<td>denmarkLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>dk</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Øster Voldgade 5-7</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Copenhagen</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Danmark</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Copenhagen</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1350</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Viking Jarl</td>
+	<td>currentEntityType</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Hjemmesider</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$9.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Custom Page Builder*Customize a Facebook business page with professional templates, photo galleries, powerful social media features, and much more.*Try 1 month*FREE*!*Then, only*$9.99*per month.*Add to my Order</td>
+	<td>TV_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer*These tools will help you get more exposure in search results to attract more visitors.*Try 1 month*FREE*!*Then, only*$9.99*per month.*Add to my Order</td>
+	<td>TV_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Receive Credit Card Payments*If you want to sell your products and services or collect donations and contributions, add PayPal to your website package.*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order</td>
+	<td>TV_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Advanced Site Activity Reports*Get an in-depth look at your website's performance with traffic data, referral sources, and more.*Try 1 month*FREE*!*Then, only*$2.99*per month.*Add to my Order</td>
+	<td>TV_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your email marketing in minutes*Reach out to customers with targeted emails*Launch professional-looking email campaigns that generate customer response.*Email newsletters, offers, and announcements*Track campaigns and measure their success*Auto-populate emails with recipients' names*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order*After accepting the FREE Trial Offer, you'll receive a link to take advantage of your new subscription. The FREE Trial Offer lasts for 1-month. If you cancel before the trial ends, you will have paid nothing and will owe nothing. To cancel, simply call (toll-free) 1-800-961-2077 or visit your dashboard for a self cancellation option. The fee will only be charged when the FREE Trial Offer period ends, and will be charged to the credit card used for your Vistaprint order today.</td>
+	<td>TV_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Drive Traffic with a Local Search Profile*Get Listed in Google®*FREE*for 1 month*Drive more traffic to your website and attract more customers*Create a profile with your business information, photos and videos in minutes*Vistaprint will submit your information to 100+ search engines including Google®, Yahoo!®, and YellowPages.com™*Get a better search ranking with automatic website enhancements*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order</td>
+	<td>TV_LocalSearchMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Custom Page Builder*Customize a Facebook business page with professional templates, photo galleries, powerful social media features, and much more.*Try 1 month*FREE*!*Then, only*$9.99*per month.*Add to my Order</td>
+	<td>TV_Annual_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer*These tools will help you get more exposure in search results to attract more visitors.*Try 1 month*FREE*!*Then, only*$9.99*per month.*Add to my Order</td>
+	<td>TV_Annual_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Receive Credit Card Payments*If you want to sell your products and services or collect donations and contributions, add PayPal to your website package.*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order</td>
+	<td>TV_Annual_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Advanced Site Activity Reports*Get an in-depth look at your website's performance with traffic data, referral sources, and more.*Try 1 month*FREE*!*Then, only*$2.99*per month.*Add to my Order</td>
+	<td>TV_Annual_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your email marketing in minutes*Reach out to customers with targeted emails*Launch professional-looking email campaigns that generate customer response.*Email newsletters, offers, and announcements*Track campaigns and measure their success*Auto-populate emails with recipients' names*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order*After accepting the FREE Trial Offer, you'll receive a link to take advantage of your new subscription. The FREE Trial Offer lasts for 1-month. If you cancel before the trial ends, you will have paid nothing and will owe nothing. To cancel, simply call (toll-free) 1-800-961-2077 or visit your dashboard for a self cancellation option. The fee will only be charged when the FREE Trial Offer period ends, and will be charged to the credit card used for your Vistaprint order today.</td>
+	<td>TV_Annual_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Drive Traffic with a Local Search Profile*Get Listed in Google® FREE for 1 month*Drive more traffic to your website and attract more customers*Create a profile with your business information, photos and videos in minutes*Vistaprint will submit your information to 100+ search engines including Google®, Yahoo!®, and YellowPages.com™*Get a better search ranking with automatic website enhancements*Try 1 month*FREE*!*Then, only*$4.99*per month.*Add to my Order </td>
+	<td>TV_Annual_LocalSearchMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Subscription Plan</td>
+	<td>TV_DualPlanFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Annual*$6.66*/Month*You Save 33%*Monthly*$9.99*/Month</td>
+	<td>TV_DualPlanBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Annual*$9.98*/Month*You Save 33%*Monthly*$14.99*/Month</td>
+	<td>TV_DualPlanStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Annual*$16.67*/Month*You Save 33%*Monthly*$24.99*/Month</td>
+	<td>TV_DualPlanPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083062</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- GERMANY! -->
+<tr>
+	<td>label</td>
+	<td>germanyLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>de</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Arnulfstr. 52</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Munich</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Deutschland</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Bavaria</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>80335</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Hessian</td>
+	<td>currentEntityType</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Homepages</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domainname</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Eine Webadresse ist die Adresse Ihrer Homepage im Internet. Wir bieten zwei Optionen an:*Starter*Wählen Sie eine Adresse, die mit vpweb.de endet, z.B. www.IhrUnternehmen.vpweb.de*Premium*Wählen Sie Ihren eigenen Domainnamen und entscheiden Sie sich für eine dieser beliebten Top-Level-Domains: .de, .eu, .com, .org, .net, .info, .biz oder .name (z.B. www.ihrunternehmen.de)</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Seiten</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Seiten: Ein Paket mit zusätzlichen Seiten bietet Ihnen mehr Platz zur Vermarktung Ihres Unternehmens. Fügen Sie nach Wunsch Fotogalerien, eine Kontaktseite, Umfragen und vieles mehr hinzu!</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>E-Mail-Adressen</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sorgen Sie für einen professionellen Auftritt mit E-Mail-Adressen, die Ihrem Domain-Namen entsprechen.*z.B. IhrName@IhrUnternehmen.de*Enthält ein Postfach mit bis zu 2 GB Speicherkapazität für Ihre Nachrichten. Sie können Ihre E-Mails entweder mit Webmail Client, POP oder IMAP einsehen.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Berichte zur Seitenaktivität</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Berichte zur Seitenaktivität helfen Ihnen zurückzuverfolgen, wie viele Personen wie oft Ihre Seite aufrufen: Sie erfahren, woher Ihre Besucher kommen und über welche Suchmaschinen oder Links sie auf Ihre Seite gekommen sind.</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domainweiterleitung</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Dank unserer Domainweiterleitung können Sie für Ihre Vistaprint Homepage eine Domain verwenden, die Sie bereits besitzen. Wir helfen Ihnen, alle nötigen Schritte mit Ihrer derzeitigen Registrierungsstelle schnell und einfach abzuwickeln. Wählen Sie das Premiumpaket, wenn Sie mehrere Domains besitzen, und nutzen Sie unbeschränkte Domainweiterleitung.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Kundenservice</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Alle Vistaprint Homepage-Pakete beinhalten telefonische Kundenbetreuung.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Bleiben Sie mit einem Blog stets mit den Besuchern Ihrer Homepage in Verbindung und bauen Sie dauerhafte Beziehungen auf. Mit einem Blog steigern Sie die Besucherzahl auf Ihrer Seite, verbessern Ihre Suchergebnisse und steigern den Bekanntheits- und Beliebtheitsgrad Ihrer Homepage.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Bildergalerien</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sie können in Minutenschnelle beliebig viele Fotos hochladen, diesen Bildern Text und Beschreibungen hinzufügen und Ihre Galerie individuell gestalten. Oder wählen Sie nach Wunsch aus Tausenden von Bildern aus unserer Bildergalerie. Nach Erstellung Ihrer eigenen und ganz persönlichen Bildergalerie ist es ein Leichtes, Ihre Fotos neu anzuordnen und zu bearbeiten.</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Kontaktformular</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Holen Sie Kundenmeinungen ein und erstellen Sie Kundenlisten dank praktischer Formulare. Verwenden Sie Kontaktformulare und erhalten Sie allgemeine Informationen über Ihre Besucher oder erstellen Sie Ihre eigenen individuellen Formulare. Sobald ein Besucher ein Formular einreicht, erhalten Sie eine E-Mail mit allen Angaben. Auf diese Weise können Sie dem Kunden direkt antworten oder diesen als neuen Kontakt in Ihre Kundenliste aufnehmen. Sie können alle ausgefüllten Formulare einfach und praktisch durch die entsprechende Funktion verwalten und organisieren.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Translate Me</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Fügen Sie Ihrer Seite ganz einfach einen Music Player hinzu, damit die Besucher Ihrer Seite Ihre hochgeladene Musik anhören können.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Landkarten</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mit einer Karte von Google Maps auf Ihrer Homepage können Sie den Standort Ihres Unternehmens oder einer Veranstaltung genau markieren.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Fügen Sie Ihrer Homepage einfach und schnell ein YouTube Video hinzu und präsentieren Sie Ihre Interessen, Informationen zu Ihrem Unternehmen, Lieblingsvideos und vieles mehr!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Suchmaschineneingabe</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Seien Sie in Google©, Yahoo©, Bing™ und Ask.com© vertreten! Wenn Ihre Homepage online geht, stellen wir sie bei Top-Suchmaschinen ein. Sie erscheinen in Suchanfragen, erhöhen Ihre Präsenz und Ihren Bekanntheitsgrad unter Neukunden und steigern die Besucherzahlen auf Ihrer Homepage.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Startseite für mobile Geräte</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Eine Startseite für mobile Geräte macht es einfach, Seitenbesuchern mit mobilen Geräten wie iPhones oder Android Smartphones Kontaktinformationen und Wegbeschreibungen zu übermitteln. Und sie passt sogar zu Ihrer Desktop-Version.</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Translate Me</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>PayPal Buttons: Ein PayPal Button ermöglicht es Ihnen, Zahlungen dank des PayPal Zahlungsdienstes entgegenzunehmen. Ideal geeignet, sollten Sie ein einzelnes Produkt verkaufen oder Spenden sammeln wollen.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Translate Me</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Translate Me</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook-Seite für Unternehmen</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Gestalten Sie einzigartige, ansprechende Facebook-Seiten, indem Sie unsere professionellen Designvorlagen ganz nach Ihren Wünschen gestalten. So können Sie soziale Netzwerke auch für Ihre Zwecke nutzen.</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Probierangebot</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Monat GRATIS!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Abo</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$9.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook-Seite für Unternehmen*Erstellen Sie Ihre eigene, professionelle Facebook-Seite mit ansprechenden Designs, Fotogalerien, Funktionen für soziale Medien und vielem mehr.*Testen Sie 1 monat für*!*Danach nur*14,99 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen</td>
+	<td>TV_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Suchmaschinenoptimierer*Diese Funktionen werden Ihnen dabei helfen in Suchmaschinen besser gefunden zu werden und dadurch mehr potenzielle Kunden anzulocken.*Testen Sie 1 monat für*GRATIS*!*Danach nur*8,49 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen</td>
+	<td>TV_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Empfang von Zahlungen per Kreditkarte*Fügen Sie unseren Online-Shop zu Ihrem Homepage-Paket hinzu, wenn Sie Ihre Produkte und Dienstleistungen verkaufen möchten.*Testen Sie 1 monat für*GRATIS*!*Danach nur*3,48 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen</td>
+	<td>TV_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Fortgeschrittene Berichte zur Seitenaktivität*Get an in-depth look at your website's performance with traffic data, referral sources, and more.*Testen Sie 1 monat für*GRATIS*!*Danach nur*2,24 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen</td>
+	<td>TV_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Erstellen Sie in Minutenschnelle Ihr e-mail-marketing*Bleiben Sie mit Ihren Kunden in Verbindung*Führen Sie professionelle E-Mail-Kampagnen durch, die Kunden anlocken.*E-Mail-Newsletter, Angebote und Ankündigungen*Kampagnen analysieren und ihren Erfolg sehen*Automatisches Einfügen des Empfängernamens*Testen Sie 1 monat für*GRATIS*!*Danach nur*5,99 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen*Nachdem Sie das GRATIS-Probierangebot bestellt haben, erhalten Sie einen Link, um Ihr neues Abo zu nutzen. Das GRATIS-Probierangebot läuft einen Monat lang. Wenn Sie vor Ablauf des Probierangebots kündigen, fallen für Sie keinerlei Kosten an. Zur Kündigung rufen Sie uns einfach an unter 030/88789257 oder gehen Sie zu Ihrer Kontrollseite und kündigen Sie selbst. Eine Gebühr wird erst nach Ablauf des GRATIS-Probierangebots berechnet. Ab diesem Zeitpunkt wird die Kreditkarte, die Sie heute bei Ihrer Bestellung über Vistaprint angegeben haben, belastet.</td>
+	<td>TV_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook-Seite für Unternehmen*Erstellen Sie Ihre eigene, professionelle Facebook-Seite mit ansprechenden Designs, Fotogalerien, Funktionen für soziale Medien und vielem mehr.*Testen Sie 1 monat für*!*Danach nur*11,25 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen</td>
+	<td>TV_Annual_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Suchmaschinenoptimierer*Diese Funktionen werden Ihnen dabei helfen in Suchmaschinen besser gefunden zu werden und dadurch mehr potenzielle Kunden anzulocken.*Testen Sie 1 monat für*GRATIS*!*Danach nur*6,49 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen</td>
+	<td>TV_Annual_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Empfang von Zahlungen per Kreditkarte*Fügen Sie unseren Online-Shop zu Ihrem Homepage-Paket hinzu, wenn Sie Ihre Produkte und Dienstleistungen verkaufen möchten.*Testen Sie 1 monat für*GRATIS*!*Danach nur*2,99 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen</td>
+	<td>TV_Annual_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Fortgeschrittene Berichte zur Seitenaktivität*Get an in-depth look at your website's performance with traffic data, referral sources, and more.*Testen Sie 1 monat für*GRATIS*!*Danach nur*1,99 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen</td>
+	<td>TV_Annual_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Erstellen Sie in Minutenschnelle Ihr e-mail-marketing*Email-Marketing*GRATIS*für 1 Monat*Wir helfen Ihnen Ihre Online-Präsenz zu erweitern.*Hunderte von Designvorlagen für jede Kampagne erhältlich.*Leistungsfähige Programme für Berichte und Anaylsen erhältlich*Keine technischen Vorkenntnisse erforderlich.*Testen Sie 1 monat für*GRATIS*!*Danach nur*4,49 €*(inkl. MwSt.)*pro monat.*Der Bestellung hinzufügen*Nachdem Sie das GRATIS-Probierangebot bestellt haben, erhalten Sie einen Link, um Ihr neues Abo zu nutzen. Das GRATIS-Probierangebot läuft einen Monat lang. Wenn Sie vor Ablauf des Probierangebots kündigen, fallen für Sie keinerlei Kosten an. Zur Kündigung rufen Sie uns einfach an unter 030/88789257 oder gehen Sie zu Ihrer Kontrollseite und kündigen Sie selbst. Eine Gebühr wird erst nach Ablauf des GRATIS-Probierangebots berechnet. Ab diesem Zeitpunkt wird die Kreditkarte, die Sie heute bei Ihrer Bestellung über Vistaprint angegeben haben, belastet.</td>
+	<td>TV_Annual_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Abo</td>
+	<td>TV_DualPlanFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Jährlich*3,74*€/Monat*Sie sparen 25%*Monatlich*4,99*€/Monat</td>
+	<td>TV_DualPlanBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Jährlich*8,98*€/Monat*Sie sparen 25%*Monatlich*11,99*€/Monat</td>
+	<td>TV_DualPlanStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Jährlich*18,73*€/Monat*Sie sparen 25%*Monatlich*24,99*€/Monat</td>
+	<td>TV_DualPlanPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083063</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- SPAIN! -->
+<tr>
+	<td>label</td>
+	<td>spainLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>es</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Museo Nacional Del Prado</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Madrid</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>España</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Madrid</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>28014</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Conquistador</td>
+	<td>currentEntityType</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Páginas web</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083065</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- EUROPE / BIZ -->
+<tr>
+	<td>label</td>
+	<td>europeLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>biz</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- FRANCE! -->
+<tr>
+	<td>label</td>
+	<td>franceLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>fr</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>19 boulevard des Invalides</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Paris</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>France</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Paris</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>75007</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Gendarme</td>
+	<td>currentEntityType</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sites web</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083067</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- IRELAND! -->
+<tr>
+	<td>label</td>
+	<td>irelandLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ie</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Atrium Building Block B</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Dublin</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Ireland</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Dublin</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>18</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>35312953826</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083083</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- ITALY! -->
+<tr>
+	<td>label</td>
+	<td>italyLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>it</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Loggiato degli Uffizi</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Florence</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Italia</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Bologna</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>50100</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Siti web</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083068</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- THE NETHERLANDS! -->
+<tr>
+	<td>label</td>
+	<td>netherlandsLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>nl</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>P.O. Box 75366</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Amsterdam</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Nederland</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>North Holland</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1070 AJ</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083071</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- NEW ZEALAND! -->
+<tr>
+	<td>label</td>
+	<td>newZealandLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>co.nz</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>4 Fort Street</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Auckland</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>New Zealand</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Auckland</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2000</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses: Give your business a professional look with an email address at your domain.*Email Alias: A valid email address that you can create to match your website URL. All of the messages that you receive through the alias are forwarded to an email address of your choice.*Mailboxes: The standard and professional packages allow you to create mailboxes which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customise your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your business, favourite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Online Store</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimiser</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Business Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your own great-looking Facebook Page using our fully customisable professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Subscription Plan</td>
+	<td>TV_DualPlanFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Business Page Builder*Create your own professional Facebook Page with great-looking designs, photo galleries, social media features and more.*Try 1 month*FREE*!*Then, only*NZ $7.99*per month.*Add to my Order</td>
+	<td>TV_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimiser*These tools will help you get more exposure in search results to attract more visitors.*Try 1 month*FREE*!*Then, only*NZ $8.99*per month.*Add to my Order</td>
+	<td>TV_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Receive Credit Card Payments*If you want to sell your products and services, add our Online Store to your website package.*Try 1 month*FREE*!*Then, only*NZ $6.99*per month.*Add to my Order</td>
+	<td>TV_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Advanced Site Activity Reports*Get an in-depth look at your website's performance with traffic data, referral sources, and more.*Try 1 month*FREE*!*Then, only*NZ $3.99*per month.*Add to my Order</td>
+	<td>TV_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your email marketing in minutes* We make it easy to increase your online presence*Grow your business with professional-looking emails.*Easily create pro email campaigns*Send your news, offers and event info*Attractive emails that match your marketing products*Try 1 month*FREE*!*Then, only*NZ $9.99*per month.*Add to my Order*After accepting the FREE Trial Offer, you'll receive a link to take advantage of your new subscription. The FREE Trial Offer lasts for 1-month. If you cancel before the trial ends, you will have paid nothing and will owe nothing. To cancel, simply call (toll-free) 0800 451 277 or visit your dashboard for a self cancellation option. The fee will only be charged when the FREE Trial Offer period ends, and will be charged to the credit card used for your Vistaprint order today.</td>
+	<td>TV_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Business Page Builder*Create your own professional Facebook Page with great-looking designs, photo galleries, social media features and more.*Try 1 month*FREE*!*Then, only*NZ $5.00*per month.*Add to my Order</td>
+	<td>TV_Annual_FacebookMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimiser*These tools will help you get more exposure in search results to attract more visitors.*Try 1 month*FREE*!*Then, only*NZ $7.49*per month.*Add to my Order</td>
+	<td>TV_Annual_SEOMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Receive Credit Card Payments*If you want to sell your products and services, add our Online Store to your website package.*Try 1 month*FREE*!*Then, only*NZ $5.74*per month.*Add to my Order</td>
+	<td>TV_Annual_OnlineStoreMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Advanced Site Activity Reports*Get an in-depth look at your website's performance with traffic data, referral sources, and more.*Try 1 month*FREE*!*Then, only*NZ $3.24*per month.*Add to my Order</td>
+	<td>TV_Annual_SiteActivityMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Create your email marketing in minutes* Email Marketing*FREE*for 1 month*We make it easy to increase your online presence*Select from hundreds of design templates for each campaign*Powerful tracking and reporting tools*No technical skills required*Try 1 month*FREE*!*Then, only*NZ $6.66*per month.*Add to my Order*After accepting the FREE Trial Offer, you'll receive a link to take advantage of your new subscription. The FREE Trial Offer lasts for 1-month. If you cancel before the trial ends, you will have paid nothing and will owe nothing. To cancel, simply call (toll-free) 0800 451 277 or visit your dashboard for a self cancellation option. The fee will only be charged when the FREE Trial Offer period ends, and will be charged to the credit card used for your Vistaprint order today.</td>
+	<td>TV_Annual_EmailMarketingMPSOAddOn</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Annual*NZ $8.00*/Month*You Save 33%*Monthly*NZ $11.99*/Month</td>
+	<td>TV_DualPlanBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Annual*NZ $12.00*/Month*You Save 33%*Monthly*NZ $17.99*/Month</td>
+	<td>TV_DualPlanStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Annual*NZ $20.66*/Month*You Save 33%*Monthly*NZ $30.99*/Month</td>
+	<td>TV_DualPlanPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083082</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- NORWAY! -->
+<tr>
+	<td>label</td>
+	<td>norwayLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>no</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Bygdøynesveien 36</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Oslo</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Norge</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Oslo</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0286</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Hjemmesider</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083072</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- AUSTRIA! -->
+<tr>
+	<td>label</td>
+	<td>austriaLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>at</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maria Theresien-Platz</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Vienna</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Österreich</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Vienna</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1010</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Homepages</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083079</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- SWITZERLAND! -->
+<tr>
+	<td>label</td>
+	<td>switzerlandLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ch</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Bahnhofstrasse 31</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Zürich</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Schweiz</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Zürich</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>8001</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Homepages</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083075</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- SINGAPORE! -->
+<tr>
+	<td>label</td>
+	<td>singaporeLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>sg</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>6 Battery Road</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Singapore</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Singapore</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>N/A</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>049909</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083085</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- SWEDEN! -->
+<tr>
+	<td>label</td>
+	<td>swedenLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>se</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>S. Mariav. 4</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Höllviken</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Sverige</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Höllviken</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>236 35</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Hemsidor</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083074</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- JAPAN! -->
+<tr>
+	<td>label</td>
+	<td>japanLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>jp</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>13-9 Ueno Park,Taito-ku</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Tokyo</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>日本</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>神奈川県</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>110-8712</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>7811234567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>ホームページ作成</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083069</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<!-- -->
+<!-- UNITED KINGDOM! -->
+<tr>
+	<td>label</td>
+	<td>unitedKingdomLocale</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>co.uk</td>
+	<td>currentLocale</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Microsoft Campus</td>
+	<td>currentStreet</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Reading</td>
+	<td>currentCity</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>United Kingdom</td>
+	<td>currentCountry</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>N/A</td>
+	<td>currentRegion</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
+	<td>regionSelect</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>RG6 1WG</td>
+	<td>currentPostalCode</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>(44)0781-123-4567</td>
+	<td>currentPhone</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Websites</td>
+	<td>productName</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Web Address</td>
+	<td>110515777</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A web address is your website's address on the web. We provide two levels of service:*Basic:*Choose an address that ends in vpweb.com. e.g., www.YourCompany.vpweb.com*Premium:*Completely customize your domain name and pick from options including .com, .org, and .net. e.g., www.YourCompany.com</td>
+	<td>toolTipText11051577</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Pages</td>
+	<td>110515388</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Provide as much information as you need to your site visitors. Add photo galleries, a contact page, testimonials and more.</td>
+	<td>toolTipText11051538</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Email Addresses</td>
+	<td>11527871717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Give your business a professional look with an email address that matches your domain name.*E.g. YourName@YourCompany.com*Includes a mailbox which can store up to 2GB of messages. You can check your mail using our webmail client or by using POP or IMAP.</td>
+	<td>toolTipText115278717</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Site Activity Reports</td>
+	<td>11400011414</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Basic:*View your total visitors and their locations, referring sites and traffic sources (like social media, search engines and online ads).*Premium:*Everything from basic plus hourly updates and the ability to drill down further into traffic sources (for example, we’ll tell you exactly what social media site a customer came from, like Facebook or Twitter).</td>
+	<td>toolTipText114000114</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain Pointers</td>
+	<td>11359791313</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Domain pointers allow you to use a domain that you already own for your Vistaprint website. We’ll provide instructions for working with your current registrar to get this done quickly and easily. If you own multiple domains, choose the Premium Package and enjoy unlimited domain pointers.</td>
+	<td>toolTipText113597913</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Phone Support</td>
+	<td>110515499</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>All of Vistaprint’s website packages include phone support. We provide two levels of service:*Basic*: Use our toll-free number to access our customer support team.*Priority*: Access our specially-trained websites agents through a dedicated and prioritized support line to get all of your websites questions answered quickly.</td>
+	<td>toolTipText11051549</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Blog</td>
+	<td>20572823030</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Connect with your site visitors and maintain lasting relationships with a blog. You can expect more traffic, improved search rankings and additional exposure to fuel your site’s popularity.</td>
+	<td>toolTipText205728230</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Image Galleries</td>
+	<td>11802832121</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Upload any number of photos, add titles and descriptions and customize your gallery in a snap. You can even select from the thousands of images in our image library. Once you’ve created your gallery, editing options and rearranging photos is just one click away!</td>
+	<td>toolTipText118028321</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Contact Forms</td>
+	<td>11802812020</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Forms are a good way to receive feedback from your customers and to build a customer list. Use our Contact Form to get basic contact information from visitors or create your own Custom Form. When a visitor submits a form, you will receive an email with all of its contents enabling you to respond directly or add the new contact to your mailing list. You can manage all form submissions in our easy-to-use Manage Forms feature.</td>
+	<td>toolTipText118028120</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Music Player</td>
+	<td>11700661818</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a music player to your site, so your site visitors can listen to your uploaded music.</td>
+	<td>toolTipText117006618</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Maps</td>
+	<td>11051551212</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Add a Google Map to your website to pinpoint the exact location of your business, special event or other place of interest.</td>
+	<td>toolTipText110515512</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>YouTube Videos</td>
+	<td>11717991919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Easily add a YouTube video to your website to showcase your interests, information about your event, favorite clips and more!</td>
+	<td>toolTipText117179919</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Submissions</td>
+	<td>20161992828</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Get Listed in Google©, Yahoo©, and Bing™!*When your website is published we'll submit it to top search sites. You'll get listed in search results, increase your visibility to new and exciting customers and drive more traffic to your website.</td>
+	<td>toolTipText201619928</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Mobile Landing Page</td>
+	<td>26081373232</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>A mobile landing page helps you quickly provide contact information and directions to site visitors that are using a mobile device, like an iPhone or Android smartphone. It even matches your desktop site!</td>
+	<td>toolTipText260813732</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Shopping Cart</td>
+	<td>11716311616</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Make money 24/7 by selling products and services on your site with PayPal or Google checkout.</td>
+	<td>toolTipText117163116</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Search Engine Optimizer</td>
+	<td>20427112929</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Rank higher in search results, drive more customers to your site and get an edge on your competition.</td>
+	<td>toolTipText204271129</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Facebook Page Builder</td>
+	<td>25027273434</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Build eye-catching, unique Facebook pages using our fully customizable, professional designs. Putting the power of social media to work for you couldn't be easier!</td>
+	<td>toolTipText250272734</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Trial Period</td>
+	<td>TV_TrialPeriod</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1 Month FREE!</td>
+	<td>TV_TrialPeriodLength</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>Monthly Fee</td>
+	<td>TV_MonthlyFee</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$4.99</td>
+	<td>TV_MonthlyBasicWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$14.99</td>
+	<td>TV_MonthlyStandardWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>$24.99</td>
+	<td>TV_MonthlyPremiumWebsitePrice</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>&amp;S=8001083076</td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>startQAConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedEnvironment']=='TST'</td>
+	<td>testEnvironment</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedEnvironment']=='DEV'</td>
+	<td>devEnvironment</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedEnvironment']=='PPD'</td>
+	<td>preprodEnvironment</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedEnvironment']=='PROD'</td>
+	<td>prodEnvironment</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>testEnvironment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>'http://www.vptest.' + storedVars['currentLocale'] +'/'</td>
+	<td>currentEnvironment</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedEnvironmentConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>devEnvironment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>'http://www.vpdev.' + storedVars['currentLocale'] +'/'</td>
+	<td>currentEnvironment</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedEnvironmentConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>preprodEnvironment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>'http://www.vppreprod.' + storedVars['currentLocale'] +'/'</td>
+	<td>currentEnvironment</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td></td>
+	<td>prodPPP</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedEnvironmentConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>prodEnvironment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>'http://www.vistaprint.' + storedVars['currentLocale'] +'/'</td>
+	<td>currentEnvironment</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedEnvironmentConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>finishedEnvironmentConfig</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${currentEnvironment}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

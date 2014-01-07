@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com" />
+<title>Website Selection Configuration</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Website Selection Configuration</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeElementPresent</td>
+	<td>id=wbot_177_bf_2</td>
+	<td>annualMonthlySelect</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['annualMonthlySelect']!=true</td>
+	<td>selectMonthlyPackage</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_177_bf_2</td>
+	<td>defaultPackageSelected</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='basic' &amp;&amp; storedVars['BillingFrequency']=='monthly'</td>
+	<td>monthlySelectBasic</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='basic' &amp;&amp; storedVars['BillingFrequency']=='annual'</td>
+	<td>annualSelectBasic</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='standard' &amp;&amp; storedVars['BillingFrequency']=='monthly'</td>
+	<td>monthlySelectStandard</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='standard' &amp;&amp; storedVars['BillingFrequency']=='annual'</td>
+	<td>annualSelectStandard</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='premium' &amp;&amp; storedVars['BillingFrequency']=='monthly'</td>
+	<td>monthlySelectPremium</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='premium' &amp;&amp; storedVars['BillingFrequency']=='annual'</td>
+	<td>annualSelectPremium</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>monthlySelectBasic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_176_bf_1</td>
+	<td>PackageToSelect</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>annualSelectBasic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_176_bf_2</td>
+	<td>PackageToSelect</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>monthlySelectStandard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_177_bf_1</td>
+	<td>PackageToSelect</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>annualSelectStandard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_177_bf_2</td>
+	<td>PackageToSelect</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>monthlySelectPremium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_177_bf_2</td>
+	<td>defaultPackageSelected</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_178_bf_1</td>
+	<td>PackageToSelect</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>annualSelectPremium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_178_bf_2</td>
+	<td>PackageToSelect</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>selectMonthlyPackage</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_177</td>
+	<td>defaultPackageSelected</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='basic'</td>
+	<td>singleSelectBasic</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='standard'</td>
+	<td>singleSelectStandard</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='premium'</td>
+	<td>singleSelectPremium</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>singleSelectBasic</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_176</td>
+	<td>PackageToSelect</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>singleSelectStandard</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_177</td>
+	<td>PackageToSelect</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>singleSelectPremium</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>wbot_178</td>
+	<td>PackageToSelect</td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>finishedPackageSelection</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['performTextValidation']==1</td>
+	<td>ValidateTextonPackageGrid</td>
+</tr>
+<tr>
+	<td>assertChecked</td>
+	<td>id=${defaultPackageSelected}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=${PackageToSelect}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=navigationnext</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>ValidateTextonPackageGrid</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

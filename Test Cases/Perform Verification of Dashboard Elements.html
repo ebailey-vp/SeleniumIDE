@@ -42,14 +42,34 @@
 	<td>/my-services/website-builder/dashboard.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
 </tr>
 <tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']=='basic'</td>
+	<td>noMobileWebsite</td>
+</tr>
+<tr>
 	<td>assertAttribute</td>
 	<td>link=Mobile Website@href</td>
 	<td>/my-services/website-builder/mobile.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
 </tr>
 <tr>
+	<td>label</td>
+	<td>noMobileWebsite</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['WebsitePackage']!='premium' &amp;&amp; storedVars['SearchEngineMPSO']!=1</td>
+	<td>noSEO</td>
+</tr>
+<tr>
 	<td>assertAttribute</td>
 	<td>link=Search Engine Optimizer@href</td>
 	<td>/my-services/website-builder/search-engine-optimizer.aspx?alt_id=${d}&amp;st=12&amp;nd=1</td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>noSEO</td>
+	<td></td>
 </tr>
 <tr>
 	<td>assertAttribute</td>

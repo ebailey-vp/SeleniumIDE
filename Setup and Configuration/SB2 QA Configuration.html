@@ -39,7 +39,7 @@
 </tr>
 <tr>
 	<td>store</td>
-	<td>23464</td>
+	<td>23462</td>
 	<td>featureValue</td>
 </tr>
 <tr>
@@ -70,7 +70,7 @@
 <!-- ** you don't want this item -->
 <tr>
 	<td>store</td>
-	<td>1</td>
+	<td>0</td>
 	<td>EmailMarketingMPSO</td>
 </tr>
 <tr>
@@ -80,130 +80,30 @@
 </tr>
 <tr>
 	<td>store</td>
-	<td>1</td>
+	<td>0</td>
 	<td>FaceBookMPSO</td>
 </tr>
 <tr>
 	<td>store</td>
-	<td>1</td>
+	<td>0</td>
+	<td>MobileWebsiteMPSO</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>0</td>
 	<td>SearchEngineMPSO</td>
 </tr>
 <tr>
 	<td>store</td>
-	<td>1</td>
+	<td>0</td>
 	<td>webStoreMPSO</td>
 </tr>
 <tr>
 	<td>store</td>
-	<td>1</td>
+	<td>0</td>
 	<td>siteActivityMPSO</td>
 </tr>
 <!-- ** don't change anything below this line. -->
-<tr>
-	<td>gotoIf</td>
-	<td>storedVars['selectedEnvironment']=='TST'</td>
-	<td>testEnvironment</td>
-</tr>
-<tr>
-	<td>gotoIf</td>
-	<td>storedVars['selectedEnvironment']=='DEV'</td>
-	<td>devEnvironment</td>
-</tr>
-<tr>
-	<td>gotoIf</td>
-	<td>storedVars['selectedEnvironment']=='PPD'</td>
-	<td>preprodEnvironment</td>
-</tr>
-<tr>
-	<td>gotoIf</td>
-	<td>storedVars['selectedEnvironment']=='PROD'</td>
-	<td>prodEnvironment</td>
-</tr>
-<tr>
-	<td>label</td>
-	<td>testEnvironment</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeEval</td>
-	<td>'http://www.vptest.' + storedVars['currentLocale'] +'/'</td>
-	<td>currentEnvironment</td>
-</tr>
-<tr>
-	<td>store</td>
-	<td></td>
-	<td>prodPPP</td>
-</tr>
-<tr>
-	<td>goto</td>
-	<td>finishedEnvironmentConfig</td>
-	<td></td>
-</tr>
-<tr>
-	<td>label</td>
-	<td>devEnvironment</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeEval</td>
-	<td>'http://www.vpdev.' + storedVars['currentLocale'] +'/'</td>
-	<td>currentEnvironment</td>
-</tr>
-<tr>
-	<td>store</td>
-	<td></td>
-	<td>prodPPP</td>
-</tr>
-<tr>
-	<td>goto</td>
-	<td>finishedEnvironmentConfig</td>
-	<td></td>
-</tr>
-<tr>
-	<td>label</td>
-	<td>preprodEnvironment</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeEval</td>
-	<td>'http://www.vppreprod.' + storedVars['currentLocale'] +'/'</td>
-	<td>currentEnvironment</td>
-</tr>
-<tr>
-	<td>store</td>
-	<td></td>
-	<td>prodPPP</td>
-</tr>
-<tr>
-	<td>goto</td>
-	<td>finishedEnvironmentConfig</td>
-	<td></td>
-</tr>
-<tr>
-	<td>label</td>
-	<td>prodEnvironment</td>
-	<td></td>
-</tr>
-<tr>
-	<td>storeEval</td>
-	<td>'http://www.vistaprint.' + storedVars['currentLocale'] +'/'</td>
-	<td>currentEnvironment</td>
-</tr>
-<tr>
-	<td>goto</td>
-	<td>finishedEnvironmentConfig</td>
-	<td></td>
-</tr>
-<tr>
-	<td>label</td>
-	<td>finishedEnvironmentConfig</td>
-	<td></td>
-</tr>
-<tr>
-	<td>echo</td>
-	<td>${currentEnvironment}</td>
-	<td></td>
-</tr>
 <tr>
 	<td>storeEval</td>
 	<td>storedVars['QA_firstname'].charAt(0).toLowerCase()</td>

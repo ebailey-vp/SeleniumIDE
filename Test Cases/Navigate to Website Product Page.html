@@ -13,11 +13,16 @@
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>${currentEnvironment}/vp/gateway.aspx?sr=no&amp;fv=${featureValue}</td>
+	<td>${currentEnvironment}vp/gateway.aspx?sr=no&amp;fv=${featureValue}${prodPPP}</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
+	<td>echo</td>
+	<td>${currentEnvironment}vp/gateway.aspx?sr=no&amp;fv=${featureValue}${prodPPP}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>mouseDown</td>
 	<td>//a[contains(text(),'${productName}')]</td>
 	<td></td>
 </tr>

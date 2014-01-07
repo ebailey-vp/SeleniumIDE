@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://www.vptest.com/" />
+<title>Interact with IM Tab Custom Domain Offer</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Interact with IM Tab Custom Domain Offer</td></tr>
+</thead><tbody>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//img[contains(@id, 'o3720')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>www.${uniqueName}.com.tst is available. Make it yours today!</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'cboxSelect_ct1_o3720_i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${FaceBookMPSO}==0</td>
+	<td>skipFacebook</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'cboxSelect_ct1_o3528_i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipFacebook</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>storedVars['selectedLocale'] != &quot;US&quot;</td>
+	<td>notUSA</td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${LocalSearchMPSO}==0</td>
+	<td>skipLocalSearch</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'cboxSelect_ct1_o3522_i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goto</td>
+	<td>skipLocalSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>notUSA</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementNotPresent</td>
+	<td>//input[starts-with(@id, 'cboxSelect_ct1_o3522_i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipLocalSearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>gotoIf</td>
+	<td>${EmailMarketingMPSO}==0</td>
+	<td>skipEmailMarketing</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//input[starts-with(@id, 'cboxSelect_ct1_o3521_i')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipEmailMarketing</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=#MpsoNextButton_enabled &gt; span.textbutton-inner</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

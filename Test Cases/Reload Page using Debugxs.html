@@ -3,22 +3,37 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://www.vptest.com" />
-<title>Click Through Confirmation Tile</title>
+<link rel="selenium.base" href="http://www.vptest.com/" />
+<title>Reload Page using Debugxs</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Click Through Confirmation Tile</td></tr>
+<tr><td rowspan="1" colspan="3">Reload Page using Debugxs</td></tr>
 </thead><tbody>
 <tr>
-	<td>waitForElementPresent</td>
-	<td>//span[contains(@id, '_SubscriptionsConfirmationButton_enabled')]</td>
+	<td>gotoIf</td>
+	<td>${useDebugXS}==0</td>
+	<td>skipDebugging</td>
+</tr>
+<tr>
+	<td>storeLocation</td>
+	<td>fullURL</td>
 	<td></td>
 </tr>
 <tr>
-	<td>clickAndWait</td>
-	<td>//a[contains(@id, '_SubscriptionsConfirmationButton_link')]</td>
+	<td>storeEval</td>
+	<td>storedVars['fullURL'] +&quot;&amp;debugxs=1&quot;</td>
+	<td>debugURL</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${debugURL}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>label</td>
+	<td>skipDebugging</td>
 	<td></td>
 </tr>
 </tbody></table>
